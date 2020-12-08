@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <title>错误</title>
+</head>
+<body>
+<div class="errorPage">
+    <span class="oops">Oops!</span><br/>
+    <img th:src="@{/MissingPage.png}"></img>
+    <p>There seems to be a problem with the page you requested
+        (<span th:text="${path}"></span>).</p>
+    <p th:text="${message}"></p>
+</div>
+</body>
+</html>
